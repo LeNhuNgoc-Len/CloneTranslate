@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Google Translate</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <ul class="melo1">
+                <li> <img class="menu" src="img/menu_24dp_FILL0_wght400_GRAD0_opsz24.png" /></li>
+                <li class="logo"><img class="logo-img" src="img/images.png"> Translate</li>
+            </ul>
+            <ul class="melo2">
+                <li><img class="setting" src="img/settings_24dp_FILL0_wght400_GRAD0_opsz24.png" /></li>
+                <li><img class="setting" src="img/apps_24dp_FILL0_wght400_GRAD0_opsz24.png" /></li>
+                <li><img class="account" src="img/440856391_450020034278307_4885298395908302334_n.png" /></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <nav>
+            <div class="text" onclick="openTab('tab1')"><img class="text-img"
+                    src="img/translate_24dp_FILL0_wght400_GRAD0_opsz24.png">Text</div>
+            <div class="images" onclick="openTab('tab2')"><img class="images-img"
+                    src="img/imagesmode_24dp_FILL0_wght400_GRAD0_opsz24.png">Images</div>
+            <div class="documents" onclick="openTab('tab3')"><img class="doc-img"
+                    src="img/document_24dp_FILL0_wght400_GRAD0_opsz24.png">Documents</div>
+            <div class="websites" onclick="openTab('tab4')"><img class="web-img"
+                    src="img/web_24dp_FILL0_wght400_GRAD0_opsz24.png">Websites</div>
+        </nav>
+
+        <div id="tab1" class="tabcontent">
+            <div class="allchoose">
+                <div class="choose" style="align-items: center; margin-right: 22%;">
+                    <button class="detect">Detect Language</button>
+                    <button class="vie">Vietnamese</button>
+                    <button class="en">English</button>
+                    <button><img src="img/keyboard_arrow_down_20dp_FILL0_wght400_GRAD0_opsz20.png"
+                            style="height: 25px;"></button>
+                </div>
+                <button class="change"><img src="img/swap_horiz_24dp_FILL0_wght400_GRAD0_opsz24.png"
+                        style="height: 22px;"></button>
+                <div class="after-choose" style="align-items: center; margin-left: 10px;">
+                    <button class="vie">English</button>
+                    <button class="en">Vietnamese</button>
+                    <button><img src="img/keyboard_arrow_down_20dp_FILL0_wght400_GRAD0_opsz20.png"
+                            style="height: 25px;"></button>
+                </div>
+            </div>
+            <div class="alltable">
+                <div class="table-input">
+                    <textarea class="input-text" type="text" name="text" id="text" required></textarea>
+                </div>
+                <div class="table-inputt">
+                    <textarea class="output" id="translate" name="translate" readonly>Translation</textarea>
+                </div>
+            </div>
+            <div class="down">
+                <a href="" class="history"><img
+                        src="img/history_20dp_FILL0_wght400_GRAD0_opsz20.png">History</a>
+                <a href="" class="saved"><img src="img/star_20dp_FILL0_wght400_GRAD0_opsz20.png">Saved</a>
+            </div>
+        </div>
+
+        <div id="tab2" class="tabcontent">
+            content2
+        </div>
+
+        <div id="tab3" class="tabcontent">
+            content3
+        </div>
+
+        <div id="tab4" class="tabcontent">
+            content4
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
